@@ -385,7 +385,7 @@ body {
 }
 .contenedor .box-projects {
     height: 100%;
-  width: 1142px;
+    width: 1142px;
 }
 .contenedor .box-projects h2 {
     color: #fff;
@@ -395,15 +395,13 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
-body {
-  background-color: #000;
-}
-
 .ag-container-shops {
+    display: none;
   padding: 60px 0;
-
   overflow: hidden;
+}
+.js-flickity-slider {
+    display: flex;
 }
 .ag-card-bg {
   height: 100%;
@@ -520,7 +518,8 @@ body {
   justify-content: center;
   height: 35px;
   width: 35px;
-  background-color: #ff7b1a;
+  text-decoration: none;
+  color: #000;
 
   position: absolute;
   right: 30px;
