@@ -150,31 +150,41 @@
         $(".prev").on("click", { d: "p" }, rotate);
 
         var i = 0;
-        var a = -1;
         function rotate(e){
         elemento = ["js","html","css","btp","php","sql"];
         if(e.data.d=="n"){
-            i++;
-            a++;
-            currdeg = currdeg - 60;
-            $("#"+elemento[i]).css({"background":"#fff"});
-            $("#"+elemento[a]).css({"background":"rgba(255,255,255,0.5)"});
-            console.log(i);
             if (i >= 5) {
                 i = -1;
             }
-            if (a == 5) {
-                a = -1;
+            if (p == 5) {
+                p = -1;
             }
+            i++;
+            var p = i - 1;
+            if (i == 0) {
+                p = 5;
+            }
+            currdeg = currdeg - 60;
+            $("#"+elemento[i]).css({"background":"#fff"});
+            $("#"+elemento[p]).css({"background":"rgba(255,255,255,0.5)"});
+            console.log("a:"+p);
+            console.log("i:"+i);
         }
         if(e.data.d=="p"){
             if (i == 0) {
                 i = 6;
             }
             i--;
+            n = i + 1;
+
+            if (i == 5) {
+                n = 0;
+            }
             $("#"+elemento[i]).css({"background":"#fff"});
+            $("#"+elemento[n]).css({"background":"rgba(255,255,255,0.5)"});
             currdeg = currdeg + 60;
-            console.log(i);
+            console.log("n:"+n);
+            console.log("i:"+i);
         }
         carousel.css({
             "-webkit-transform": "rotateY("+currdeg+"deg)",
