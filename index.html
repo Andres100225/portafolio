@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 </head>
 <body id="body">
     <div class="contenedor">
         <div class="bubbles">
-            <span class="bubble1"><img src="assets/bubble.png" alt=""></span>
-            <span class="bubble2"><img src="assets/bubble.png" alt=""></span>
-            <span class="bubble3"><img src="assets/bubble.png" alt=""></span>
-            <span class="bubble4"><img src="assets/bubble.png" alt=""></span>
-            <span class="bubble5"><img src="assets/bubble.png" alt=""></span>
-            <span class="bubble6"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble1" id="bubble1"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble2" id="bubble2"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble3" id="bubble3"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble4" id="bubble4"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble5" id="bubble5"><img src="assets/bubble.png" alt=""></span>
+            <span class="bubble6" id="bubble6"><img src="assets/bubble.png" alt=""></span>
         </div>
         <section>
             <div class="home" id="home">
@@ -39,12 +42,6 @@
         <section>
             <div class="skills" id="skills">
                 <div class="box-skills">
-                    <div class="text-skills">
-                        <h2>Skills</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti sapiente nam, perspiciatis eius odit et maxime exercitationem sunt earum architecto aliquam! Ipsa, at aperiam est temporibus natus rem cumque.
-                        </p>
-                    </div>
                     <div class="info-skills">
                         <div class="container-carousel">
                             <div class="carousel">
@@ -61,14 +58,279 @@
                             <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
                         </div>
                     </div>
+                    <div class="text-skills">
+                        <h2>Skills</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti sapiente nam, perspiciatis eius odit et maxime exercitationem sunt earum architecto aliquam! Ipsa, at aperiam est temporibus natus rem cumque.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="projects" id="projects">
-                <div class="box-skills">
+                <div class="box-projects">
                     <div>
                         <h2>Projects</h2>
+                    </div>
+                    <div class="ag-container-shops">
+                        <div class="js-flickity-slider">
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cd3905e129e4.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cd3905e11943.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de MoustacheRobot</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c40c0840e54f.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c40c0840d5f0.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de PatricioOliver</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c89ae0fe87f5.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c40096210546.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Soft Horno</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c068078ccfb9.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5ce7f5360446f.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Alvarez</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c2e2364747fb.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5be47ff15177a.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de George Manta</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cdc46149de9c.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cc351113b311.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Ascer437</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cc0c0d80676d.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cc23af24a05e.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de universokiki</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5d128a3570e58.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5d128a3493363.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de strawberrystyle</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c685730a5080.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5d0a6ff679c0f.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Tótem</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5d77ec0f31c55.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5db9c81ac794d.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Corvus</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bfd9fe647c64.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bfda621f1ceb.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de martinvarbaro</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bce0fc91d1f0.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bce0fc9151e8.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Villy</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5be0c4be8919b.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5be086fa51ac5.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de SunSurf</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5ca6990d3528a.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5ca6990d33356.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Los Cocos</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c4b910f1d696.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5c3eb9093ed2b.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Piñata</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bea050c5bff5.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5bea050c4eb98.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de California Sun</span>
+                                  <span class="ag-shop-card-footer_products">Tienda oficial</span></div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <div class="js-carousel-cell">
+                            <div class="ag-shop-card_box-wrap">
+                              <div class="ag-shop-card_box">
+                                <div class="ag-shop-card_body">
+                                  <div class="js-card-bg ag-card-bg" style="background-image: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cb88ca821bfd.png);"></div>
+                                  <a href="#" class="ag-shop-card-body_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/5cb88d289ab15.png" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                  <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                  <span class="ag-shop-card-footer_title">Tienda de Kapusta</span> <span class="ag-shop-card-footer_products">Tienda oficial</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,13 +339,13 @@
             <nav>
                 <ul>
                     <li>
-                        <button type="button" onclick="sectionHome()">Home</button>
+                        <button type="button" class="activeBtn" id="homeBtn" onclick="sectionHome()">Home</button>
                     </li>
                     <li>
-                        <button type="button" onclick="sectionSkills()">Skills</button>
+                        <button type="button" id="skillsBtn" onclick="sectionSkills()">Skills</button>
                     </li>
                     <li>
-                        <button type="button" onclick="sectionProjects()">Projects</button>
+                        <button type="button" id="projectsBtn" onclick="sectionProjects()">Projects</button>
                     </li>
                 </ul>
                 <ul>
@@ -100,8 +362,6 @@
             </nav>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
        const type = new Typed('.typed',{
         strings:['<> Web developer <>', '<> Web designer <>', '<> User experience designer <>'],
@@ -128,20 +388,106 @@
        });
 
        function sectionHome() {
+        bubbleInit = 0;
+        while (bubbleInit <= 6) {
+            bubbleInit++;
+            $("#bubble"+bubbleInit).removeClass("opacity-0");
+            $("#bubble"+bubbleInit).removeClass("opacity-1");
+        }
+
+        $("#homeBtn").addClass("activeBtn");
+        $("#skillsBtn").removeClass("activeBtn");
+        $("#projectsBtn").removeClass("activeBtn");
+
         $("#skills").slideUp(1000);
         $("#projects").slideUp(1000);
         $("#home").slideDown(1000);
+        var bubble = 0;
+        while (bubble <= 6) {
+            bubble++;
+            $("#bubble"+bubble).addClass("opacity-0");
+        }
+        setTimeout(() => {
+            var bubble2 = 0;
+            while (bubble2 <= 6) {
+                bubble2++;
+                $("#bubble"+bubble2).html("<img src='assets/bubble.png'>");
+                $("#bubble"+bubble2).removeClass("bubblet"+bubble2);
+                $("#bubble"+bubble2).addClass("bubble"+bubble2);
+                $("#bubble"+bubble2).addClass("opacity-1");
+            }
+        }, 1000);
        }
 
        function sectionSkills() {
+        bubbleInit = 0;
+        while (bubbleInit <= 6) {
+            bubbleInit++;
+            $("#bubble"+bubbleInit).removeClass("opacity-0");
+            $("#bubble"+bubbleInit).removeClass("opacity-1");
+        }
+        
+        $("#skillsBtn").addClass("activeBtn");
+        $("#homeBtn").removeClass("activeBtn");
+        $("#projectsBtn").removeClass("activeBtn");
+
         $("#home").slideUp(1000);
         $("#projects").slideUp(1000);
         $("#skills").slideDown(1000);
+        var bubble = 0;
+        while (bubble <= 6) {
+            bubble++;
+            $("#bubble"+bubble).addClass("opacity-0");
+        }
+        setTimeout(() => {
+            var bubble2 = 0;
+            while (bubble2 <= 6) {
+                bubble2++;
+                $("#bubble"+bubble2).html("<img src='assets/triangle.png'>");
+                $("#bubble"+bubble2).removeClass("bubble"+bubble2);
+                $("#bubble"+bubble2).addClass("bubblet"+bubble2);
+                $("#bubble"+bubble2).addClass("opacity-1");
+            }
+        }, 1000);
        }
        function sectionProjects() {
+        bubbleInit = 0;
+        while (bubbleInit <= 6) {
+            bubbleInit++;
+            $("#bubble"+bubbleInit).removeClass("opacity-0");
+            $("#bubble"+bubbleInit).removeClass("opacity-1");
+        }
+
+        $("#projectsBtn").addClass("activeBtn");
+        $("#homeBtn").removeClass("activeBtn");
+        $("#skillsBtn").removeClass("activeBtn");
+
         $("#home").slideUp(1000);
         $("#skills").slideUp(1000);
         $("#projects").slideDown(1000);
+
+        var bubble = 0;
+        while (bubble <= 6) {
+            bubble++;
+            $("#bubble"+bubble).addClass("opacity-0");
+        }
+        setTimeout(() => {
+            var bubble2 = 0;
+            while (bubble2 <= 6) {
+                bubble2++;
+                $("#bubble"+bubble2).html("<img src='assets/square.png'>");
+
+                if ($("#bubble"+bubble2).hasClass("bubble"+bubble2)) {
+                    $("#bubble"+bubble2).removeClass("bubble"+bubble2);
+                    $("#bubble"+bubble2).addClass("bubblet"+bubble2);
+                } else if($("#bubble"+bubble2).hasClass("bubblet"+bubble2)) {
+                    $("#bubble"+bubble2).removeClass("bubblet"+bubble2);
+                    $("#bubble"+bubble2).addClass("bubble"+bubble2);
+                }
+
+                $("#bubble"+bubble2).addClass("opacity-1");
+            }
+        }, 1000);
        }
         var carousel = $(".carousel"),
         currdeg  = 0;
@@ -193,6 +539,46 @@
             "transform": "rotateY("+currdeg+"deg)"
         });
         }
+        (function ($) {
+            $(function () {
+
+                var agSlideFlickity = $('.js-flickity-slider').flickity({
+                autoPlay: 2000,
+                imagesLoaded: true,
+                percentPosition: false,
+                prevNextButtons: false,
+                initialIndex: 5,
+                pageDots: false,
+                groupCells: 1
+                });
+
+                var agCard = agSlideFlickity.find('.js-carousel-cell .js-card-bg'),
+                agTransform = 'string' == typeof document.documentElement.style.transform ? 'transform' : 'WebkitTransform',
+                agSlide = agSlideFlickity.data('flickity');
+
+                agSlideFlickity.on('scroll.flickity', function () {
+                agSlide.slides.forEach(function (t, e) {
+                    var n = agCard[e],
+                    i = -1 * (t.target + agSlide.x) / 3;
+
+                    n.style[agTransform] = 'translateX(' + i + 'px)';
+                });
+                });
+
+                agSlideFlickity.on('dragStart.flickity', function (t, e) {
+                document.ontouchmove = function (t) {
+                    t.preventDefault();
+                }
+                });
+
+                agSlideFlickity.on('dragEnd.flickity', function (t, e) {
+                document.ontouchmove = function (t) {
+                    return true;
+                }
+                });
+
+            });
+        })(jQuery);
     </script>
 </body>
 </html>
