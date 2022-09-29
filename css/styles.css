@@ -47,12 +47,14 @@ table {
 	border-spacing: 0;
 }
 body {
-    background: url(../assets/fondo.jpg);
+    background: linear-gradient(to right,#3402bb,#2f04ac,#1c0379,#110362);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120%;
+    height: 100%;
     font-family: 'Lato', sans-serif;
 }
 .contenedor {
+    padding:0px 50px;
     max-width: 1400px;
     margin: auto;
     width: 100%;
@@ -337,7 +339,6 @@ body {
   width: 250px;
   height: 200px;
   line-height: 200px;
-  font-size: 5em;
   text-align: center;
   color: #FFF;
   border-radius: 10px;
@@ -382,10 +383,13 @@ body {
 }
 .contenedor .projects {
     display: none;
+    width: 1142px;
 }
 .contenedor .box-projects {
-    height: 100%;
-    width: 1142px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contenedor .box-projects h2 {
     color: #fff;
@@ -560,5 +564,23 @@ body {
   .ag-format-container {
     width: 960px;
   }
+}
+@media (max-width:1100px) {
+  .container-carousel {
+    width: 125px;
+    height: 100px;
+    perspective: 500px;
+  }
+  .item {
+    width: 125px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 5em;
+  }
+  .item img {
+    height: 50px;
+  }
+}
+@media (max-width:900px) {
 
 }
