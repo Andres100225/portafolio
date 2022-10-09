@@ -49,12 +49,9 @@ table {
 body {
     background: linear-gradient(to right,#3402bb,#2f04ac,#1c0379,#110362);
     background-repeat: no-repeat;
-    background-size: 120%;
-    height: 100%;
     font-family: 'Lato', sans-serif;
 }
 .contenedor {
-    padding:0px 50px;
     max-width: 1400px;
     margin: auto;
     width: 100%;
@@ -64,6 +61,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.contenedor .box-contenedor {
+    margin:0px 50px;
+
 }
 .contenedor .bubbles span {
     position: fixed;
